@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "MinionRegular";
+  src: url("/static/fonts/Minion Pro Regular.ttf");
+}
+
+.slick-slide div div {
+  outline: none;
+}
+
+.slick-dots li button::before {
+  color: #eb8066;
+  font-size: 16px;
+}
+
+// .slick-dots li {
+//   margin: 0 10px;
+// }
+
+.slick-dots li.slick-active button::before {
+  color: #e96642;
+}
+
+.slider_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  padding-bottom: 40px;
+
+  h3 {
+    font-size: 40px;
+    font-family: stratos, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    @media screen and (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    width: 60%;
+    text-align: center;
+    font-family: "MinionRegular";
+
+    @media screen and (max-width: 420px) {
+      font-size: 18px;
+    }
+  }
+
+  .slider_image {
+    background: url("/static/img/organisation.png") center center no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 200px;
+
+    @media screen and (max-width: 420px) {
+      width: 200px;
+    }
+  }
+}

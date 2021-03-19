@@ -1,0 +1,28 @@
+.grant-cards-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  margin-top: 20px;
+  max-width: 240px;
+  min-width: 240px;
+  min-height: 280px;
+  padding: 60px 0;
+  text-align: center;
+  background-color: rgba(248, 236, 220, 0.6);
+  position: relative;
+
+  &_details {
+    color: rgb(235, 97, 61);
+    text-transform: initial;
+    margin-left: 139px;
+    border-bottom: 2px solid rgb(235, 97, 61);
+    padding: 5px 30px 5px 0px;
+    position: absolute;
+    bottom: 10%;
+  }
+}

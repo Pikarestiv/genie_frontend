@@ -1,0 +1,23 @@
+.featured {
+  height: 115vh;
+  position: relative;
+
+  &_background {
+    background: url("/static/img/bgg.png") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -15%;
+    z-index: 0;
+  }
+
+  &_slider {
+    position: relative;
+    bottom: -40%;
+
+    @media screen and (max-width: 420px) {
+      bottom: -25%;
+    }
+  }
+}

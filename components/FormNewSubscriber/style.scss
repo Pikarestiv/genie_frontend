@@ -1,0 +1,93 @@
+
+
+.new_sub_form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  max-width: 580px;
+  margin: 30px auto 0;
+  width: 100%;
+  padding: 30px !important;
+  position: relative;
+
+  &_wrapper {
+    position: relative;
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .select_units {
+    min-width: 160px;
+  }
+
+  .title_field {
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+  }
+
+  .email_field {
+    min-width: 240px;
+  }
+
+  .grant_form_actions {
+    margin-top: 20px;
+
+    > * {
+      margin-right: 20px;
+    }
+
+    p {
+      font-size: 12px;
+      position: absolute;
+    }
+  }
+}
+
+.MuiButton-containedPrimary {
+  background-color: #eb613d !important;
+}
+
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: #eb613d !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #37415C !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #37415C !important;
+}
+
+.form-helper {
+  position: absolute;
+  left: calc(50% + 310px);
+  top: 0;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.holding_page {
+  .grant-cards-wrapper {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.stepcontent {
+  @media screen and (max-width: 420px) {
+    width: 200px !important;
+    margin-left: -25px !important;
+    padding-left: 0 !important;
+  }
+}

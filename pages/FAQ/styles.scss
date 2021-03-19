@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "MinionRegular";
+  src: url("/static/fonts/Minion Pro Regular.ttf");
+}
+
+.faq {
+  padding: 50px 150px;
+
+  &_title {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  h4 {
+    color: #eb613d;
+    font-size: 22px;
+    padding-top: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: "MinionRegular";
+    padding-bottom: 10px;
+  }
+}

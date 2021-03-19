@@ -1,0 +1,279 @@
+.popup {
+  position: fixed;
+  z-index: 1300;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+
+  &_bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    align-items: center;
+    touch-action: none;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &_form {
+    height: 100%;
+    outline: 0;
+    opacity: 1;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+      margin: 48px;
+      position: relative;
+      overflow-y: auto;
+      display: flex;
+      // max-height: calc(100% - 96px);
+      height: 95vh;
+      flex-direction: column;
+      color: rgba(0, 0, 0, 0.87);
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      background-color: #fff;
+      max-width: 1200px;
+      min-width: 300px;
+      width: 95vh;
+      border-radius: 50px;
+
+      @media screen and (min-width: 1024px) and (max-width: 1024px) {
+        height: 80vh;
+      }
+
+      &_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        // height: 100%;
+        padding: 30px;
+        background: url("/static/img/popup-bg.png") center center no-repeat;
+        background-size: cover;
+
+        @media screen and (min-width: 1450px) {
+          padding-bottom: 100px;
+          height: 100%;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1024px) {
+          height: 100%;
+        }
+
+        .close {
+          background: url("/static/img/close.png") center center no-repeat;
+          background-size: contain;
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+          position: absolute;
+          top: 5%;
+          right: 6%;
+          z-index: 11;
+
+          @media screen and (max-width: 420px) {
+            position: fixed;
+            right: 17%;
+          }
+        }
+
+        .title {
+          text-align: center;
+          font-size: 24px;
+          color: #37415c;
+          font-weight: bold;
+          width: 75%;
+          margin: 0 auto;
+          padding-bottom: 20px;
+
+          @media screen and (max-width: 420px) {
+            font-size: 18px;
+            width: 100%;
+          }
+
+          @media screen and (min-width: 1450px) {
+            font-size: 28px;
+            padding-top: 20px;
+          }
+        }
+
+        .cards {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          @media screen and (max-width: 420px) {
+            flex-direction: column;
+          }
+
+          .card_form {
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px 10px;
+
+            @media screen and (max-width: 420px) {
+              padding: 10px 0 5px 0;
+            }
+
+            @media screen and (min-width: 1450px) {
+              padding: 20px 10px;
+              height: 320px;
+              justify-content: space-around;
+            }
+
+            &_image {
+              width: 50px;
+              height: 50px;
+
+              @media screen and (max-width: 420px) {
+                width: 30px;
+                height: 30px;
+              }
+
+              @media screen and (min-width: 1450px) {
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
+
+          .card_form:nth-child(1) .card_form_image {
+            background: url("/static/img/card.png") center center no-repeat;
+            background-size: cover;
+          }
+
+          .card_form:nth-child(2) .card_form_image {
+            background: url("/static/img/card2.png") center center no-repeat;
+            background-size: cover;
+          }
+
+          .card_form:nth-child(3) .card_form_image {
+            background: url("/static/img/card3.png") center center no-repeat;
+            background-size: cover;
+          }
+
+          h3 {
+            color: #eb613d;
+
+            @media screen and (min-width: 1450px) {
+              font-size: 16px;
+            }
+          }
+
+          p {
+            text-align: center;
+
+            @media screen and (min-width: 1450px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .input {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+
+        .subscribe {
+          display: flex;
+          justify-content: space-around;
+          padding: 0px 30px;
+
+          &_left {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+          }
+
+          &_right {
+            width: 55%;
+          }
+
+          .label {
+            font-size: 18px;
+            color: #37415c;
+            font-weight: bold;
+            display: block;
+            padding: 10px 0;
+          }
+
+          &_input {
+            padding: 10px 0;
+
+            &-slider span {
+              // color: grey;
+            }
+          }
+
+          .thumb {
+            color: red;
+          }
+
+          &_postcode {
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            background: none;
+            width: 40%;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .form_return {
+      height: 50%;
+      background-color: #faf5ec;
+      border-radius: 30px;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 320px;
+
+      p {
+        text-align: center;
+        width: 50%;
+        font-size: 22px;
+        font-weight: bold;
+
+        @media screen and (max-width: 420px) {
+          font-size: 18px;
+        }
+      }
+
+      .back {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #eb613d;
+        color: #eb613d;
+        width: 30%;
+        cursor: pointer;
+        width: 40%;
+        cursor: pointer;
+        margin-left: 300px;
+        padding-top: 30px;
+        font-weight: bold;
+
+        @media screen and (max-width: 420px) {
+          width: 55%;
+          margin-left: 190px;
+          padding-top: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
