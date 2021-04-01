@@ -39,6 +39,9 @@ const styles = theme => ({
     color: 'white',
     height: 32,
     padding: '0 30px',
+    "&:focus": {
+      outline: 'none',
+    }
   },
   advSearchBox: {
     width: '100%',
@@ -139,7 +142,7 @@ class FormMainFilters extends PureComponent {
               advSearchEl.style.display = advSearchEl.style.display != "none"?"none":"block";
             }}
             >
-              <button className={classes.advSearch}>Advanceed Search</button>
+              <button className={classes.advSearch}>Advanced Search</button>
           </Link>
         </div>
 
