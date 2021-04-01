@@ -114,8 +114,10 @@ class FormMainFilters extends PureComponent {
               }
             }}
             placeholder=" enter keywords"
-            value={title}
-            onChange={this.handleChange("title")}
+            // value={title}
+            // onChange={this.handleChange("title")}
+            value={body}
+            onChange={this.handleChange("body")}
             autoFocus={true}
             disableUnderline={true}
             variant={"outlined"}
@@ -142,7 +144,7 @@ class FormMainFilters extends PureComponent {
         </div>
 
         <div id="advanced-search" style={{display: 'none'}}>
-          <div className="filters-block">
+          {/* <div className="filters-block">
             <TextField
               id="search-title"
               label="Search in title"
@@ -155,7 +157,7 @@ class FormMainFilters extends PureComponent {
               value={body}
               onChange={this.handleChange('body')}
             />
-          </div>
+          </div> */}
 
           <div className="filters-block">
             <InputUnit classes={classes} onChange={selectedUnit => this.setState({ selectedUnit })} />
