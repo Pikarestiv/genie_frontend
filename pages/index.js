@@ -10,6 +10,8 @@ import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import SearchPage from "../components/SearchPage";
 import FormNewSubscriber from "../components/FormNewSubscriber";
+import "../components/Popup/styles.scss";
+import FormDialog from "../components/Popup";
 import Footer from "../components/Footer";
 import Featured from "../components/Featured";
 import Link from "next/link";
@@ -29,6 +31,22 @@ const styles = theme => ({
 });
 
 class Holding extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+      show: false
+    };
+  }
+  
+  closePopup = e => {
+    this.setState({ open: false });
+  };
+
+  openPopup = e => {
+    this.setState({ open: true });
+  };
+
   render() {
     const { classes } = this.props;
 
@@ -43,7 +61,11 @@ class Holding extends Component {
             <p>
               <Link href="/contact">Contact</Link>
             </p>
-            <p className="holding_menu-signup">Sign up</p>
+            <p 
+              className="holding_menu-signup"
+              onClick={this.openPopup}
+              >Sign up</p>
+              {this.state.open && <FormDialog close={this.closePopup} />}
           </div>
           {/* <Button
             className="button"
