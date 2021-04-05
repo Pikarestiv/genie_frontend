@@ -4,11 +4,11 @@
 }
 
 .holding {
-  &_page {
+  // &_page {
     // background: linear-gradient(to top, rgb(255, 241, 235) 0%, rgb(172, 224, 249) 100%);
     // background: rgb(255, 241, 235);
     // padding-bottom: 50px;
-  }
+  // }
 
   &_header {
     // height: 100vh;
@@ -17,10 +17,14 @@
     align-items: center;
     justify-content: space-between;
     color: #000;
-    position: relative;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
     // background: linear-gradient(to top, rgb(255, 241, 235) 0%, rgb(172, 224, 249) 100%);
-    z-index: 1;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    box-shadow: 2px 0px 1px rgba(0, 0, 0, 0.2);
+    z-index: 99;
 
     @media screen and (max-width: 576px) {
       justify-content: flex-end;
