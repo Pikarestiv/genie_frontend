@@ -101,6 +101,7 @@ class FormMainFilters extends PureComponent {
           justifyContent: 'flex-start',
           alignItems: 'center',
           flexWrap: 'wrap',
+          opacity: 0.8,
         }}
         className="main-filters"
       >
