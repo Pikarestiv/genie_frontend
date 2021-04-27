@@ -20,21 +20,21 @@ export default class SimpleSlider extends Component {
                         <div className="slider_wrap">
                             <h3>As featured in</h3>
                             <div className="slider_image" src="/static/img/organisation.png" />
-                            <p>The UK government has all kinds of grants ailable which can offer payment for taking care of your environment and rural community.</p>
+                            <p>The UK government has all kinds of grants available which can offer payment for taking care of your environment and rural community.</p>
                         </div>
                     </div>
                     <div>
                         <div className="slider_wrap">
                             <h3>As featured in</h3>
                             <div className="slider_image" src="/static/img/organisation.png" />
-                            <p>The UK government has all kinds of grants ailable which can offer payment for taking care of your environment and rural community.</p>
+                            <p>The UK government has all kinds of grants available which can offer payment for taking care of your environment and rural community.</p>
                         </div>
                     </div>
                     <div>
                         <div className="slider_wrap">
                             <h3>As featured in</h3>
                             <div className="slider_image" src="/static/img/organisation.png" />
-                            <p>The UK government has all kinds of grants ailable which can offer payment for taking care of your environment and rural community.</p>
+                            <p>The UK government has all kinds of grants available which can offer payment for taking care of your environment and rural community.</p>
                         </div>
                     </div>
                 </Slider>
