@@ -58,6 +58,10 @@ class SearchPage extends Component {
     )
       .then(res => res.json())
       .then(resp => {
+        window.scroll({
+          top: 500,
+          behavior: 'smooth',
+        })
         if (!resp.searchAllowed) {
           this.setState({ open: true });
         } else {
