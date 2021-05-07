@@ -29,7 +29,7 @@ export default function ProTip() {
       <LightBulbIcon className={classes.lightBulb} />
       Pro tip: See more{' '}
       <Link href="https://material-ui.com/getting-started/page-layout-examples/">
-        page layout examples
+        <a>page layout examples</a>
       </Link>{' '}
       on the Material-UI documentation.
     </Typography>

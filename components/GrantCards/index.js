@@ -49,7 +49,7 @@ class GrantsCard extends PureComponent {
             <CardActions style={{ padding: '0' }}>
               <div size="small" className="card_details">
                 <Link href={`/grant/${grant.id}`}>
-                  See details
+                  <a title="See Details">See details</a>
                 </Link>
               </div>
               {/* <Button size="small" color="primary">

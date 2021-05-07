@@ -25,7 +25,7 @@ export default function About() {
         <Typography variant="h4" component="h1" gutterBottom>
           Next.js v4-beta example
         </Typography>
-        <Link href="/">Go to the main page</Link>
+        <Link href="/"><a title="Go to the main page">Go to the main page</a></Link>
         <ProTip />
         <MadeWithLove />
       </Box>

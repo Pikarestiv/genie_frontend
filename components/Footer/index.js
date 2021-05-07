@@ -13,13 +13,13 @@ const Footer = () => (
     </div>
     <ul className="footer_menu">
       <li>
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact"><a title="Contact">Contact</a></Link>
       </li>
       <li>
-        <Link href="/FAQ">FAQs</Link>
+        <Link href="/FAQ"><a title="FAQ">FAQs</a></Link>
       </li>
       <li>
-        <Link href="/privacy">Privacy Policy</Link>
+        <Link href="/privacy"><a title="Privacy Policy">Privacy Policy</a></Link>
       </li>
     </ul>
   </div>

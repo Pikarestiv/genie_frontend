@@ -14,7 +14,7 @@ const FAQ = () => {
         <div className="holding_menu">
           {/* <p>About</p> */}
           <p>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact"><a title="Contact">Contact</a></Link>
           </p>
           <p className="holding_menu-signup">Sign up</p>
         </div>
