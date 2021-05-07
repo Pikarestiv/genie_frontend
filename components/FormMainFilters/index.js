@@ -18,11 +18,11 @@ import "./styles.scss";
 
 const styles = theme => ({
   formControl: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
     minWidth: 220
   },
   selectEmpty: {
-    marginTop: theme.spacing.unit * 2
+    marginTop: theme.spacing(2)
   },
   notchedOutline: {
     borderWidth: 0,
@@ -110,7 +110,7 @@ class FormMainFilters extends PureComponent {
       <div className="search">
         <MuiThemeProvider theme={inputTheme}>
           <TextField
-            tabindex="0"
+            tabIndex="0"
             className="search_input"
             InputProps={{
               classes: {
@@ -123,7 +123,7 @@ class FormMainFilters extends PureComponent {
             value={body}
             onChange={this.handleChange("body")}
             autoFocus={true}
-            disableUnderline={true}
+            disableunderline="true"
             variant={"outlined"}
             onKeyDown={e => { e.key === "Enter" && onSubmit(this.state) }}
           />

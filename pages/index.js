@@ -25,8 +25,8 @@ const styles = theme => ({
   },
   fab: {
     position: "fixed",
-    bottom: theme.spacing.unit * 2,
-    right: theme.spacing.unit * 2
+    bottom: theme.spacing(2),
+    right: theme.spacing(2)
   }
 });
 
@@ -59,7 +59,7 @@ class Holding extends Component {
           <div className="holding_menu">
             {/* <p>About</p> */}
             <p>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact"><a title="Contact">Contact</a></Link>
             </p>
             <p 
               className="holding_menu-signup"
