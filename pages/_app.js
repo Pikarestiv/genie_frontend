@@ -1,5 +1,5 @@
 import React from "react";
-import App, { Container } from "next/app";
+import App from "next/app";
 import Link from "next/link";
 
 import AppBar from "@material-ui/core/AppBar";
@@ -25,7 +25,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <React.Fragment>
         <Head title="Ginie" />
         <ThemeProvider theme={theme}>
           <AppBar position="static">
@@ -45,7 +45,7 @@ class MyApp extends App {
           <CssBaseline />
           <Component {...pageProps} />
         </ThemeProvider>
-      </Container>
+      </React.Fragment>
     );
   }
 }
