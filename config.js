@@ -1,1 +1,0 @@
-let API_LINK = 'http://localhost:3010/';
